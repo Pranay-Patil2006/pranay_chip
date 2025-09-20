@@ -13,6 +13,10 @@ Microcontroller: A complete system on one chip, including CPU, memory, and perip
 
 Microprocessor: Only the CPU core; needs external memory and peripherals to work. More powerful and flexible, used in PCs and complex systems.
 
+We explain the entire concept using a green block as an overview but focus specifically on the blue block, which represents the processor core. The RTL code is converted into basic gates like AND, OR, and flip-flops. At this stage, there are no high-level constructs like if statements left—only transistors and metal layers remain, representing the physical hardware. This process creates a GDSII file, which contains all the layout information needed by the chip fabricator. Before sending the design to the factory, the GDSII file goes through important checks called DRC (Design Rule Check) and LVS (Layout Versus Schematic) to make sure everything is correct. Once it passes these checks, the design is sent to the factory in a step called tape out. After manufacturing, the factory sends back the physical chips, a stage known as tape in. Then, peripherals are connected and data is transferred onto the chip to program it. The chip produces an output which we compare with previous expected outputs to confirm everything works correctly. This entire process, including testing and production, typically takes about 14 months. The processors we build run at speeds between 100 MHz and 130 MHz. Interestingly, the original Arduino used a RISC-V chip.
+
+
+
 
 # Task 2
 ## magic
