@@ -1,4 +1,4 @@
-#Task 1
+# Task 1
 We start by modeling the entire RISC-V processor using C code. This C model acts as a high-level specification of how the processor should behave. We compile and run applications on this model using tools like RISC-V GCC to make sure it works correctly.
 
 Once we're confident the C model is accurate, we move on to writing the actual hardware description in Verilog. The Verilog code for the processor only contains what is part of the processor’s instruction set and core logic. Peripherals and other modules (called IP blocks) are kept separate and reused as needed.
